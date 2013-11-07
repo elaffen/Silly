@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+<title>Olavs first app</title>
+
+</head>
+
+<body>
+<button id="silly">Klikk meg</button>
+<button id="clear">Fjern</button>
+<div id="results"></div>
+
+
+<script src="js/zepto.js"></script>
+<script src="js/silly.js"></script>
+
+<script>
+$('#silly').click(function(){
+	SILLY.DoIt($('#results'));
+});
+$('#clear').click(function(){
+	$('#results').html('');
+});
+</script>
+</body>
+</html>
